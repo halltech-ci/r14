@@ -1,6 +1,15 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-      
+      <record id="mrp_production_inherit_view" model="ir.ui.view">
+          <field name="name">mrp_production_form</field>
+          <field name="model">mrp.production</field>
+          <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
+          <field name="arch" type="xml">
+              <xpath expr="//sheet/group/group/field[@name='product_id']" position="before">
+                  <field name="sale_order" class="oe_inline text-left" attrs="{'readonly': [('state', '!=', 'draft')], 'invisible': [('state', 'not in', ('draft', 'done'))]}"/>
+              </xpath>
+          </field>
+      </record> 
   </data>
 </odoo>
