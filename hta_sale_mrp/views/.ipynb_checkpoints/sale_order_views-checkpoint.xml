@@ -1,0 +1,18 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record id="sale_order_form_inherit" model="ir.ui.view">
+        <field name="name">sale.order.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <h1 position="before">
+                <div>
+                    <button type="object" name="action_create_mrp" string="Create MRP" class="oe_highlight" 
+                          attrs="{'invisible': [('state', '!=', 'sale')]}"/>
+                </div>
+            </h1>
+        </field>
+    </record>
+  </data>
+</odoo>
