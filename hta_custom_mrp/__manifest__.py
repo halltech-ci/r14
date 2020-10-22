@@ -21,8 +21,8 @@
 
     # any module necessary for this one to work correctly
     'depends': ['base',
-                'mrp',
-               'sale_management',
+                #'mrp',
+               #'sale_management',
                ],
 
     # always loaded
