@@ -6,12 +6,10 @@
         <field name="model">sale.order</field>
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
-            <h1 position="before">
-                <div>
-                    <button type="object" name="action_create_mrp" string="Create MRP" class="oe_highlight" 
-                          attrs="{'invisible': [('state', '!=', 'sale')]}"/>
-                </div>
-            </h1>
+            <xpath expr="//form/header/button[@name='action_cancel']" position = "after">
+                <button type="object" name="action_create_mrp" string="Create MRP" class="oe_highlight" 
+                    attrs="{'invisible': [('state', '!=', 'sale')]}"/>
+            </xpath>
         </field>
     </record>
   </data>
