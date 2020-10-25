@@ -6,9 +6,10 @@
           <field name="model">mrp.production</field>
           <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
           <field name="arch" type="xml">
-              <xpath expr="//sheet/group/group/field[@name='product_id']" position="before">
-                  <field name="sale_order" class="oe_inline text-left" attrs="{'readonly': [('state', '!=', 'draft')], 'invisible': [('state', 'not in', ('draft', 'done'))]}"/>
-              </xpath>
+              <h1 position="after">
+                <label for="description"/>
+                <field name="description"/>
+              </h1>
           </field>
       </record> 
   </data>

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "hta_sale_mrp",
+    'name': "hta_custom_apps",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
@@ -16,14 +16,13 @@
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/14.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Sales',
-    'version': '14.0.1',
+    'category': 'Uncategorized',
+    'version': '0.1',
 
     # any module necessary for this one to work correctly
     'depends': ['base_setup',
                'sale_management',
-               'mrp',
-                'project'
+               'project',
                ],
 
     # always loaded
@@ -31,8 +30,8 @@
         # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
-        'views/sale_order_views.xml',
-        #'data/sale_ir_sequence.xml'
+        'data/sale_ir_sequence.xml',
+        'views/sale_order_views.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
