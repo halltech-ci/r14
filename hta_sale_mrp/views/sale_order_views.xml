@@ -7,9 +7,14 @@
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
             <xpath expr="//form/header/button[@name='action_cancel']" position = "after">
-                <button type="object" name="action_create_mrp" string="Create MRP" class="oe_highlight" 
+                <button type="object" name="action_create_bom" string="Create MRP" class="oe_highlight" 
                     attrs="{'invisible': [('state', '!=', 'sale')]}"/>
             </xpath>
+            <xpath expr="//sheet/group" position="after">
+              <group>
+                  <field name="description"/>
+              </group>
+          </xpath>
         </field>
     </record>
   </data>

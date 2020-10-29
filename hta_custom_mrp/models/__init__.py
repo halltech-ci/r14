@@ -2,3 +2,4 @@
 
 #from . import models
 from . import mrp_production
+from . import custom_production

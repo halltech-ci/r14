@@ -6,12 +6,6 @@
       <field name="model">sale.order</field>
       <field name="inherit_id" ref="sale.view_order_form"/>
       <field name="arch" type="xml">
-          <!-- Insert sale order object-->
-          <xpath expr="//sheet/group" position="after">
-              <group>
-                  <field name="description"/>
-              </group>
-          </xpath>
           <!-- Insert sale quotation recipient-->
           <xpath expr="//sheet/group/group/field[@name='payment_term_id']" position="after">
             <field name="sale_order_recipient"/>
