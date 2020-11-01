@@ -11,6 +11,11 @@
             <field name="sale_order_recipient"/>
             <field name='project_code'/>
           </xpath>
+          <xpath expr="//sheet/group" position="after">
+              <group>
+                  <field name="description"/>
+              </group>
+          </xpath>
           <!--Insert projet_id in sale quotation -->
           <xpath expr="//sheet/group/group/field[@name='partner_shipping_id']" position="after">
             <field name="project_id"/>

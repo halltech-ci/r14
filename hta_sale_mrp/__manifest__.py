@@ -31,7 +31,7 @@
         # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
-        'views/sale_order_views.xml',
+        #'views/sale_order_views.xml',
         #'data/sale_ir_sequence.xml'
     ],
     # only loaded in demonstration mode
