@@ -30,7 +30,8 @@
          #'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
-        'views/mrp_production_views.xml'
+        'views/mrp_production_views.xml',
+        'views/sale_order_views.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
